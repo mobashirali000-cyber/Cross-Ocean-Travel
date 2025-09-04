@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross Ocean Travel Travel Agency</title>
+  <style>
+    body {margin: 0; font-family: Arial, sans-serif; background: #f5f5f5;}
+    .hero {background: url('https://picsum.photos/1920/600?travel') center/cover no-repeat; padding: 50px 20px; color: white; text-align: center;}
+    .search-box {background: rgba(0, 51, 102, 0.9); padding: 20px; max-width: 900px; margin: auto; border-radius: 10px;}
+    .search-box input, .search-box select {width: 100%; padding: 8px; margin: 8px 0; border: none; border-radius: 5px;}
+    .search-box label {color: #fff; font-size: 14px; font-weight: bold; display: block; margin-top: 10px;}
+    .search-box button {background: #8bc34a; border: none; padding: 12px; color: #fff; font-weight: bold; width: 100%; border-radius: 5px; cursor: pointer;}
+    .search-box button:hover {background: #7cb342;}
+    .about {padding: 40px 20px; background: #fff; text-align: center;}
+    .about h2 {margin-bottom: 20px;}
+    .airline {padding: 40px 20px; text-align: center;}
+    .airline img {max-width: 300px; border-radius: 10px;}
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="search-box">
+      <h2>Flight Search</h2>
+      <form>
+        <label>Flying From:</label>
+        <input type="text" placeholder="Departure Airport">
+
+        <label>Flying To:</label>
+        <input type="text" placeholder="Destination Airport">
+
+        <label>Departure Date:</label>
+        <input type="date">
+
+        <label>Return Date:</label>
+        <input type="date">
+
+        <label>Passengers:</label>
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+
+        <label>Class of Service:</label>
+        <select>
+          <option>Economy</option>
+          <option>Premium Economy</option>
+          <option>Business</option>
+          <option>First</option>
+        </select>
+
+        <label>Airline:</label>
+        <select id="airlines"></select>
+
+        <button type="button">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="about">
+    <h2>About Us</h2>
+    <p>
+      Cross Ocean Travel has been a leading supplier of VFR flight tickets to the trade for just under 40 years.
+      Initially we were known for flights to the Middle East, but since then we have expanded to Africa, India,
+      and other destinations. We are also a leading supplier of flights to the Hajj and Umrah market.
+    </p>
+  </div>
+
+  <div class="airline">
+    <h2>Featured Airline</h2>
+    <img src="https://upload.wikimed<img src="https://media.cntraveler.com/photos/577fcc0…/master/w_3000,h_2000,c_limit/BritishAirways-Boeing777-AlamyF1KW8J.jpg" jsaction class="sFlh5c FyHeAf iPVvYb" style="max-width: 3000px; height: 373px; margin: 0px; width: 559px;" alt="British Airways Flight Turns Around After Almost 12 Hours In Air | Condé  Nast Traveler" jsname="kn3ccd">ia.org/wikipedia/commons/d/d3/British_Airways_A380.jpg" alt="British Airways">
+    <p><strong>British Airways (BA)</strong></p>
+  </div>
+
+  <script>
+    // Airline IATA codes
+    const airlines = [
+      { code: "AA", name: "American Airlines" },
+      { code: "AF", name: "Air France" },
+      { code: "BA", name: "British Airways" },
+      { code: "CX", name: "Cathay Pacific" },
+      { code: "DL", name: "Delta Air Lines" },
+      { code: "EK", name: "Emirates" },
+      { code: "EY", name: "Etihad Airways" },
+      { code: "LH", name: "Lufthansa" },
+      { code: "QR", name: "Qatar Airways" },
+      { code: "SQ", name: "Singapore Airlines" },
+      { code: "TK", name: "Turkish Airlines" },
+      { code: "UA", name: "United Airlines" },
+      { code: "VS", name: "Virgin Atlantic" }
+    ];
+
+    const airlineSelect = document.getElementById("airlines");
+    airlines.forEach(a => {
+      const option = document.createElement("option");
+      option.value = a.code;
+      option.textContent = `${a.name} (${a.code})`;
+      airlineSelect.appendChild(option);
+    });
+  </script>
+
+</body>
+</html>
