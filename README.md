@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
