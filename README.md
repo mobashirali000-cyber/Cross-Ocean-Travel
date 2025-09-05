@@ -12,20 +12,14 @@ body {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cross Ocean Travel Travel Agency</title>
   <style>
-    body {margin: 0; font-family: Arial, sans-serif; background: #f5f5f5;}
-    .hero {background: url('https://picsum.photos/1920/600?travel') center/cover no-repeat; padding: 50px 20px; color: white; text-align: center;}
-    .search-box {background: rgba(0, 51, 102, 0.9); padding: 20px; max-width: 900px; margin: auto; border-radius: 10px;}
-    .search-box input, .search-box select {width: 100%; padding: 8px; margin: 8px 0; border: none; border-radius: 5px;}
-    .search-box label {color: #fff; font-size: 14px; font-weight: bold; display: block; margin-top: 10px;}
-    .search-box button {background: #8bc34a; border: none; padding: 12px; color: #fff; font-weight: bold; width: 100%; border-radius: 5px; cursor: pointer;}
-    .search-box button:hover {background: #7cb342;}
-    .about {padding: 40px 20px; background: #fff; text-align: center;}
-    .about h2 {margin-bottom: 20px;}
-    .airline {padding: 40px 20px; text-align: center;}
-    .airline img {max-width: 300px; border-radius: 10px;}
-  </style>
-</head>
-<body>
+   <div class="airline">
+  <h2>Featured Airline</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/British_Airways_A380.jpg" 
+       alt="British Airways" 
+       style="max-width: 300px; border-radius: 10px;">
+  <p><strong>British Airways (BA)</strong></p>
+</div>
+
 
   <div class="hero">
     <div class="search-box">
